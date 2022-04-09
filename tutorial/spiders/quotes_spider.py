@@ -8,9 +8,11 @@ class QuotesSpider(scrapy.Spider):
     name = "quotes"
 
     def start_requests(self):
+        file_path = "tutorial/spiders/download/angular/"
 
         def createLicense(id, imageUrl, fileName):
-            imageUrl = "https://elements.envato.com/api/v1/items/"+id+"/license.json"
+            print("\nCreate license")
+            imageUrl = "https://elements.envato.com/api/v1/items/" + id + "/license.json"
 
             payload = json.dumps({
                 "itemId": id,
@@ -43,7 +45,8 @@ class QuotesSpider(scrapy.Spider):
             return createDownload(id)
 
         def createDownload(id):
-            url = "https://elements.envato.com/api/v1/items/"+id+"/download.json"
+            print("\nStart Download")
+            url = "https://elements.envato.com/api/v1/items/" + id + "/download.json"
 
             payload = json.dumps({
                 "licenseType": "trial",
@@ -86,20 +89,22 @@ class QuotesSpider(scrapy.Spider):
             imageUrl = i['coverImage']['w2740']
             fileName = i['title']
             print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName, "\n")
-            if os.path.exists("tutorial/spiders/download/angular/" + fileName + ".jpg"):
+            if os.path.exists(file_path + fileName + ".jpg"):
                 print("Image already exists")
             else:
-                yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg'})
+                print("Download image")
+                yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
 
-            if os.path.exists("tutorial/spiders/download/angular/" + fileName + ".zip"):
+            if os.path.exists(file_path + fileName + ".zip"):
                 print("File already exists")
             else:
                 downloadUrl = createLicense(id, imageUrl, fileName)
-                yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip'})
+                print("\nDownload file: ")
+                yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
 
         f.close()
 
-    def parse(self, response, fileName, ext):
-        with open("tutorial/spiders/download/angular/" + fileName + "." + ext, 'wb') as f:
+    def parse(self, response, fileName, ext, file_path):
+        with open(file_path + fileName + "." + ext, 'wb') as f:
             f.write(response.body)
         self.log(f'Saved file {fileName}')
