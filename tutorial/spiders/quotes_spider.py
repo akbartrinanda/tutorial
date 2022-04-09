@@ -92,7 +92,7 @@ class QuotesSpider(scrapy.Spider):
             print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName, "\n")
 
             # Download image
-            if os.path.exists(file_path + "/preview" + fileName + ".jpg"):
+            if os.path.exists(file_path + "preview/" + fileName + ".jpg"):
                 print("Image already exists")
             else:
                 print("Download image")
@@ -110,7 +110,7 @@ class QuotesSpider(scrapy.Spider):
 
     def parse(self, response, fileName, ext, file_path):
         if ext == 'jpg':
-            with open(file_path + "/preview" + fileName + "." + ext, 'wb') as f:
+            with open(file_path + "preview/" + fileName + "." + ext, 'wb') as f:
                 f.write(response.body)
         else:
             with open(file_path + fileName + "." + ext, 'wb') as f:
