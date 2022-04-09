@@ -88,6 +88,6 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
 ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
-FILES_STORE = '/Users/atn/Downloads/scrapy/tutorial/tutorial/spiders/download/angular/preview'
+FILES_STORE = '/Users/atn/Downloads/scrapy/tutorial/tutorial/spiders/download/angular'
 IMAGES_STORE = '/Users/atn/Downloads/scrapy/tutorial/tutorial/spiders/download/angular'
 DOWNLOAD_DELAY = 2  # delay in downloading images
