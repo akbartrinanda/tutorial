@@ -1,0 +1,379 @@
+{
+  "version": "same",
+  "data": {
+    "aggregations": {
+      "categories": [
+        {
+          "key": "Site Templates",
+          "docCount": 43
+        },
+        {
+          "key": "Landing Page Templates",
+          "docCount": 32
+        },
+        {
+          "key": "Admin Templates",
+          "docCount": 30
+        }
+      ],
+      "subcategories": [],
+      "tags": null,
+      "itemType": null,
+      "totalLibrarySize": 73,
+      "byItemType": [],
+      "retinaReady": [
+        {
+          "key": 1,
+          "keyAsString": "true",
+          "docCount": 53
+        },
+        {
+          "key": 0,
+          "keyAsString": "false",
+          "docCount": 1
+        }
+      ],
+      "videoMinimumResolution": [
+        {
+          "key": "1080p (Full HD)",
+          "docCount": 0
+        },
+        {
+          "key": "2K",
+          "docCount": 0
+        },
+        {
+          "key": "4K (UHD)",
+          "docCount": 0
+        },
+        {
+          "key": "720p (HD)",
+          "docCount": 0
+        },
+        {
+          "key": "All",
+          "docCount": 73
+        }
+      ],
+      "responsive": [
+        {
+          "key": 1,
+          "keyAsString": "true",
+          "docCount": 71
+        },
+        {
+          "key": 0,
+          "keyAsString": "false",
+          "docCount": 1
+        }
+      ],
+      "psdFilesIncluded": [
+        {
+          "key": 0,
+          "keyAsString": "false",
+          "docCount": 2
+        },
+        {
+          "key": 1,
+          "keyAsString": "true",
+          "docCount": 2
+        }
+      ],
+      "sketchFilesIncluded": [
+        {
+          "key": 0,
+          "keyAsString": "false",
+          "docCount": 2
+        }
+      ]
+    },
+    "items": [
+      {
+        "id": "NUE5X62",
+        "itemUuid": "c0de95b0-9b81-4f51-a10d-4968557b8bb4",
+        "slug": "dorsin-angular-angular-landing-page-template",
+        "title": "Dorsin Angular - Angular Landing Page Template",
+        "subTitle": "Dorsin Angular is a Responsive Landing Page Template build with Angular 10, angular CLI, which",
+        "description": "**Dorsin** is a Responsive Landing Page Template build with Angular-10, angular CLI, which is available in multiple layouts and compatible for any device. It contains a lot of high flexibility and configurable components, which written in TypeScript and JavaScript with complete defined types. The clean and well-commented code allows you to easily customizing it. Each page sections are composed of its own HTML, SCSS and ts files, organized in its own directory and so it’s easy to customize and reuse.\n\n**FEATURES:**\n\n- 9 Different Home Pages\n- Built with Angular 10\n- Font Icons\n- Unlimited color options\n- Google Fonts\n- Easy to Customize\n- Major Browsers Support\n- Fully Responsive Layout\n- Ng Bootstrap (No jQuery Needed)\n- Clean code\n- Modern Design\n- And much more…",
+        "itemType": "web-templates",
+        "itemTypeName": "Web Templates",
+        "itemTypeNameEn": "Web Templates",
+        "saleable": true,
+        "publishedAt": "2022-02-18T10:37:54.224+00:00",
+        "updatedAt": "2022-02-21T13:43:24.655+00:00",
+        "madeAvailableAt": null,
+        "tags": [
+          "angular",
+          "bootstrap",
+          "portfolio",
+          "free",
+          "landing",
+          "blog",
+          "agency",
+          "angularjs",
+          "app",
+          "multipurpose",
+          "startup",
+          "corporate",
+          "comingsoon",
+          "news",
+          "business"
+        ],
+        "categories": [
+          "Site Templates",
+          "Landing Page Templates"
+        ],
+        "itemAttributes": {
+          "retinaReady": true,
+          "webTemplatesFileTypes": [
+            "CSS",
+            "SASS",
+            "JS"
+          ],
+          "hasDocumentation": true,
+          "responsive": true,
+          "demoUrl": "https://themesbrand.com/dorsin/angular.html"
+        },
+        "coverImage": {
+          "w140": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?fit=max&fm=jpeg&q=80&w=140&s=d783a2f3bedbe7caf28540961cf1f493",
+          "w174": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?fit=max&fm=jpeg&q=80&w=174&s=cceacfbe4b3a4f7b33ca40db49656e21",
+          "og1200x630": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=c5d39b353a058b8cfd6a8ede92192b2a",
+          "tn632x421": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&crop=top&fit=crop&h=421&w=632&s=0c90392c3c7b1b4d92d549b4aab957e1",
+          "w632": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=632&s=bb6a1b4746f8589c61a4fb2dfc0f0318",
+          "w710": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=710&s=ca2a126b0a2085cb6004bc61b47e05a7",
+          "w355": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?fit=max&fm=jpeg&q=80&w=355&s=9e45c4970710dc49a7e50c20c956ac87",
+          "w433": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=433&s=7da22c3caeb525cc55df9c501b3dcd2b",
+          "og1200x800": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=2a81cb845bab3027abb027cff493d3b6",
+          "tn120x80": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?crop=top&fit=crop&fm=jpeg&h=80&q=80&w=120&s=34acb46e973336247304fb2c335a083c",
+          "w1370": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=1370&s=2d7148bf984b1748595ee4bf6635c165",
+          "w1170": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=1170&s=3128ee2e63332b1d04a074ca4febcbba",
+          "w900": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=900&s=61877d1a8a605d88577c131bc71e50c7",
+          "w866": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=866&s=9df41b786723d21b35329dc57a9f18ce",
+          "w316": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?fit=max&fm=jpeg&q=80&w=316&s=0a3a1e62870c8cdf8e272b6f0657f8f4",
+          "tn316x211": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?crop=top&fit=crop&fm=jpeg&h=211&q=80&w=316&s=97d416ff6a29383f24e607cc020301dd",
+          "tn60x40": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?crop=top&fit=crop&fm=jpeg&h=40&q=80&w=60&s=6cc197fe46416cbb82cf4e5a3bb5d567",
+          "w2740": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=2740&s=528dad36b6302991ac4ca74f33d28dc1",
+          "w1019": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=1019&s=d07d90554c0e608b04c9058ac3b7fb73",
+          "w2038": "https://elements-cover-images-0.imgix.net/5763ec1b-f210-4f1a-aaed-dfb0037df365?auto=compress%2Cformat&fit=max&w=2038&s=9645a7d19ce52f2612fe81221da5ddce"
+        },
+        "coverVideo": null,
+        "coverAudio": null,
+        "previewImages": [],
+        "contributorUsername": "Themesbrand",
+        "fileName": "elements-dorsin-angular-angular-landing-page-template-NUE5X62-2022-02-18.zip",
+        "fileSizeBytes": 0,
+        "marketItem": {
+          "id": "58083b2c-e8a2-46d0-aee2-97fc1e1be0ad",
+          "legacyId": 25143100
+        },
+        "pixelsquidProduct": null,
+        "previewAudio": null,
+        "proOrganization": null,
+        "isDescriptionTranslated": false,
+        "isCurrentlyFree": false,
+        "queryOrigin": null,
+        "preventIndexing": false,
+        "nofollowTags": null,
+        "humaneId": "NUE5X62",
+        "displayType": "generic",
+        "aspectRatio": 1.5,
+        "flags": {
+          "isNew": false
+        }
+      },
+      {
+        "id": "STYUUJR",
+        "itemUuid": "149bef69-b0da-4958-9210-cdc6f67db8e6",
+        "slug": "vien-angular-angular-9-admin-template",
+        "title": "Vien Angular - Angular 9 Admin Template",
+        "subTitle": "Clean and Organised Code - Awesome Design",
+        "description": "**MAGIC IS IN THE DETAILS**\n\nVien is a combination of good design, quality code and attention for details. \n\nWe used same design language for components, layouts, apps and other parts of the theme.\n\nWe tried to create an Angular admin theme that we would like to use ourselves so we listed our priorities. We would like to have a theme that is not over complicated to use, does the job well, contains must have components and looks really nice.\n\nHope you enjoy it!\n\n\n**FEATURES**\n\n+ Right Click Menu\n+ Multi Language Support\n+ Keyboard Shortcuts\n+ Two Panels Menu\n+ IconsMind Webfont\n+ 20 Color Schemes\n+ 4 Dashboards\n+ Lots of Components\n+ 3 Applications\n\n\n**INCLUDED PSD FILES**\n\n+ Dashboard.psd\n+ Chat.psd\n+ Details.psd\n+ Library.psd\n+ ListImage.psd\n+ ListThumbs.psd\n+ Login.psd\n+ Mailing.psd\n+ Survey.psd\n+ RightModal.psd\n+ Profile-Social.psd\n+ Profile-Portfolio.psd\n+ Profile-Portfolio-Detail.psd\n+ Details.psd\n+ Coming.Soon.psd\n+ Knowledge.Base.psd\n\n\n**PLUGINS USED IN PIAF**\n\n+ ng-select\n+ ngx-translate\n+ ngx-datatable\n+ angular-archwizard\n+ angular-calendar\n+ angular-svg-round-progressbar\n+ angular2-hotkeys\n+ angular2-notifications\n+ chart.js\n+ date-fns\n+ firebase\n+ glidejs\n+ ng2-nouislider\n+ ngx-bootstrap\n+ ngx-dropzone-wrapper\n+ ngx-ellipsis\n+ ngx-lightbox\n+ ngx-perfect-scrollbar\n+ ngx-quill\n+ ngx-sortablejs\n+ rxjs\n+ tslib\n+ video.js\n+ yamapng",
+        "itemType": "web-templates",
+        "itemTypeName": "Web Templates",
+        "itemTypeNameEn": "Web Templates",
+        "saleable": true,
+        "publishedAt": "2021-10-09T01:26:22.007+00:00",
+        "updatedAt": "2022-02-21T23:53:10.429+00:00",
+        "madeAvailableAt": null,
+        "tags": [
+          "admin",
+          "angular",
+          "clean",
+          "ui",
+          "dashboard",
+          "angularcli",
+          "chat",
+          "todo",
+          "survey"
+        ],
+        "categories": [
+          "Admin Templates"
+        ],
+        "itemAttributes": {
+          "webTemplatesFileTypes": [
+            "CSS",
+            "HTML",
+            "JS"
+          ],
+          "hasDocumentation": true,
+          "responsive": true,
+          "psdFilesIncluded": true,
+          "demoUrl": "https://vien-angular-web.coloredstrategies.com/"
+        },
+        "coverImage": {
+          "w140": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?fit=max&fm=jpeg&q=80&w=140&s=0c3bf808745bc2db03b6fa9525896dbd",
+          "w174": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?fit=max&fm=jpeg&q=80&w=174&s=ccb16080c3969798f7e862dc3013b5f0",
+          "og1200x630": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=1de4e9883687a8150e13961a6eadd300",
+          "tn632x421": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&crop=top&fit=crop&h=421&w=632&s=cd5a38667b333138caf8a80ed686f7dd",
+          "w632": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=632&s=a42a473b2bb9f29b4c20af0a820d7a48",
+          "w710": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=710&s=baba7086cb53aa9a97684527c6c8dfb6",
+          "w355": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?fit=max&fm=jpeg&q=80&w=355&s=50f385a57925486a4c2927129f914abe",
+          "w433": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=433&s=edc34ad3b364dcbd1a6bbdaa9a77dcbb",
+          "og1200x800": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=7de4c324c16494fb24dc773a218673df",
+          "tn120x80": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?crop=top&fit=crop&fm=jpeg&h=80&q=80&w=120&s=f6eacc9fc2fe9d09b19141ae55703035",
+          "w1370": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=1370&s=e74d7b5132b7c335eeaff44f402d40e0",
+          "w1170": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=1170&s=7d91f27e6c3b2aec872e1841d2c5d566",
+          "w900": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=900&s=abf7c06953c1390bfced238ba1b87f6b",
+          "w866": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=866&s=3aefa9763cb8bfaddbbd35e63d349037",
+          "w316": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?fit=max&fm=jpeg&q=80&w=316&s=1443dc34969eaceb22df5e6aa3ead104",
+          "tn316x211": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?crop=top&fit=crop&fm=jpeg&h=211&q=80&w=316&s=ba7bab1967f73ed91f8d73511f4f0921",
+          "tn60x40": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?crop=top&fit=crop&fm=jpeg&h=40&q=80&w=60&s=92e2bbf7f90663f3b1971af2083ac18b",
+          "w2740": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=2740&s=78e73b5f9e96c3c9c9937a6ea6a582e5",
+          "w1019": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=1019&s=683245b4502ededf3d01e13280b6e324",
+          "w2038": "https://elements-cover-images-0.imgix.net/1080b852-02d8-4150-bb98-12e4f015c978?auto=compress%2Cformat&fit=max&w=2038&s=5156a69dffc5b7fb96e6cba45f60a197"
+        },
+        "coverVideo": null,
+        "coverAudio": null,
+        "previewImages": [],
+        "contributorUsername": "ColoredStrategies",
+        "fileName": "elements-vien-angular-angular-9-admin-template-STYUUJR-2021-10-09.zip",
+        "fileSizeBytes": 0,
+        "marketItem": {
+          "id": "f06bcb15-516b-4827-b6eb-8d7356c48889",
+          "legacyId": 25817698
+        },
+        "pixelsquidProduct": null,
+        "previewAudio": null,
+        "proOrganization": null,
+        "isDescriptionTranslated": false,
+        "isCurrentlyFree": false,
+        "queryOrigin": null,
+        "preventIndexing": false,
+        "nofollowTags": null,
+        "humaneId": "STYUUJR",
+        "displayType": "generic",
+        "aspectRatio": 1.5,
+        "flags": {
+          "isNew": false
+        }
+      },
+      {
+        "id": "4DA53R3",
+        "itemUuid": "2a58375e-4c23-4925-8211-3c2ce3d74591",
+        "slug": "xolcy-angular-angular-js-landing-page-template",
+        "title": "Xolcy Angular - Angular Js Landing Page Template",
+        "subTitle": "Xolcy is a multi purpose Angular & Bootstrap 5 landing page template.",
+        "description": "**Xolcy** is a multi purpose Angular & Bootstrap 5 landing page template. It is an excellent Angular 12 template for startup, business, application, saas, marketing, agency, business etc. It’s fully responsive and built with bootstrap v5.0.1. Users will love your site because it gives them a unique user experience (UX), clean, modern & beautiful design. You will be easily able to customize it for your needs.\n\n**FEATURES:**\n\n- Based on Twitter Bootstrap 5.0.1 and Angular 12\n- Angular CLI\n- 12 Different Home Pages\n- Built with HTML5 & CSS3\n- Font Icons\n- Google Fonts\n- Easy to Customize\n- Cross Browser Optimization\n- Clean code\n- Modern Design\n- Free Updates\n- And much more…",
+        "itemType": "web-templates",
+        "itemTypeName": "Web Templates",
+        "itemTypeNameEn": "Web Templates",
+        "saleable": true,
+        "publishedAt": "2021-12-08T04:57:49.346+00:00",
+        "updatedAt": "2022-02-21T23:53:56.546+00:00",
+        "madeAvailableAt": null,
+        "tags": [
+          "angular",
+          "bootstrap",
+          "portfolio",
+          "free",
+          "landing",
+          "blog",
+          "agency",
+          "event",
+          "app",
+          "multipurpose",
+          "startup",
+          "corporate",
+          "comingsoon",
+          "news",
+          "business"
+        ],
+        "categories": [
+          "Landing Page Templates",
+          "Site Templates"
+        ],
+        "itemAttributes": {
+          "retinaReady": true,
+          "webTemplatesFileTypes": [
+            "HTML",
+            "CSS",
+            "JS"
+          ],
+          "hasDocumentation": true,
+          "responsive": true,
+          "demoUrl": "https://themesdesign.in/xolcy/angular.html"
+        },
+        "coverImage": {
+          "w140": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?fit=max&fm=jpeg&q=80&w=140&s=ba3263cd4e94ff0927e6b42493ed95d3",
+          "w174": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?fit=max&fm=jpeg&q=80&w=174&s=6421b9261c2f3465de0ed929126b0efa",
+          "og1200x630": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=f81d18851ad4eef9760a20b0b3cb8bed",
+          "tn632x421": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&crop=top&fit=crop&h=421&w=632&s=73a448430ce526c8b7f267b61bcd34d3",
+          "w632": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=632&s=6d9947f353b20cf5b01f51191e5a321d",
+          "w710": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=710&s=63e84460dc54b761e44615eb22046ace",
+          "w355": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?fit=max&fm=jpeg&q=80&w=355&s=0dd5b926e77b34d45c0b3832fb40adeb",
+          "w433": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=433&s=f28b3b74bfae85443b39c9c86a414b44",
+          "og1200x800": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=4ed942d7b09d74e367b695d7459afaed",
+          "tn120x80": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?crop=top&fit=crop&fm=jpeg&h=80&q=80&w=120&s=84c5ba398636b7cd7824c8d6bb154b40",
+          "w1370": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=1370&s=c4da73304ff6d5b7004ad5e1ede66e0d",
+          "w1170": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=1170&s=9184cee36dbbe6d088fa6e64909084f2",
+          "w900": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=900&s=348962c7f8088e469394c91d953e93bf",
+          "w866": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=866&s=7f044d4c018e2719543e5305da1e1075",
+          "w316": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?fit=max&fm=jpeg&q=80&w=316&s=31d1207f31f590d2b702772f84a41c67",
+          "tn316x211": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?crop=top&fit=crop&fm=jpeg&h=211&q=80&w=316&s=6f3e1fcb57d837c0b94ed794d7a0d78c",
+          "tn60x40": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?crop=top&fit=crop&fm=jpeg&h=40&q=80&w=60&s=aa22ea55bce829760f8e31dc3cd4027f",
+          "w2740": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=2740&s=3fd81065858b7390d145dfdaf8963121",
+          "w1019": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=1019&s=f455f9803fe60bb2bfaeef86d20a5a86",
+          "w2038": "https://elements-cover-images-0.imgix.net/dd8320da-3b39-4a10-b496-26bfbbfcfe2e?auto=compress%2Cformat&fit=max&w=2038&s=ec2fb2cc6bf7f8001aff8777efaba718"
+        },
+        "coverVideo": null,
+        "coverAudio": null,
+        "previewImages": [],
+        "contributorUsername": "themesdesign",
+        "fileName": "elements-xolcy-angular-angular-js-landing-page-template-4DA53R3-2021-12-08.zip",
+        "fileSizeBytes": 0,
+        "marketItem": {
+          "id": "164c68c7-6c4f-454a-bd43-ffb299447249",
+          "legacyId": 32488333
+        },
+        "pixelsquidProduct": null,
+        "previewAudio": null,
+        "proOrganization": null,
+        "isDescriptionTranslated": false,
+        "isCurrentlyFree": false,
+        "queryOrigin": null,
+        "preventIndexing": false,
+        "nofollowTags": null,
+        "humaneId": "4DA53R3",
+        "displayType": "generic",
+        "aspectRatio": 1.5,
+        "flags": {
+          "isNew": false
+        }
+      }
+    ],
+    "noindex": true,
+    "relatedSearches": [],
+    "relatedSearchesOtherItemTypes": {},
+    "similarItems": [],
+    "totalItems": 73,
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 2,
+      "startIndex": 1,
+      "endIndex": 48
+    },
+    "isQuickViewModalEnabled": false,
+    "notFound": false,
+    "canDownloadSubscriberItems": false
+  }
+}
