@@ -72,11 +72,14 @@ class QuotesSpider(scrapy.Spider):
             response = requests.request(
                 "POST", url, headers=headers, data=payload)
 
-            # print(response.text)
-            res = json.loads(response.text)
-            downloadUrl = res['data']['attributes']['downloadUrl']
-            # print(res['data']['attributes']['downloadUrl'])
-            return downloadUrl
+            try:
+                # print(response.text)
+                res = json.loads(response.text)
+                downloadUrl = res['data']['attributes']['downloadUrl']
+                # print(res['data']['attributes']['downloadUrl'])
+                return downloadUrl
+            except:
+                return ""
 
         f = open('data.json')
         data = json.load(f)
@@ -95,21 +98,18 @@ class QuotesSpider(scrapy.Spider):
                 print("Image already exists")
             else:
                 print("Download image")
-                try:
-                    yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
-                except:
-                    pass
+                yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
 
             # Download file
             if os.path.exists(file_path + fileName + ".zip"):
                 print("File already exists")
             else:
                 downloadUrl = createLicense(id, imageUrl, fileName)
-                print("Download file: ")
-                try:
+                if downloadUrl != "":
+                    print("Download file: ")
                     yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
-                except:
-                    pass
+                else:
+                    print("Download file failed")
         f.close()
 
     def parse(self, response, fileName, ext, file_path):
