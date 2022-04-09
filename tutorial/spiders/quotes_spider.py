@@ -1,6 +1,7 @@
 import scrapy
 import json
 import requests
+import os.path
 
 
 class QuotesSpider(scrapy.Spider):
@@ -85,9 +86,16 @@ class QuotesSpider(scrapy.Spider):
             imageUrl = i['coverImage']['w2740']
             fileName = i['title']
             print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName, "\n")
-            # yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg'})
-            downloadUrl = createLicense(id, imageUrl, fileName)
-            yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip'})
+            if os.path.exists("tutorial/spiders/download/angular/" + fileName + ".jpg"):
+                print("Image already exists")
+            else:
+                yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg'})
+
+            if os.path.exists("tutorial/spiders/download/angular/" + fileName + ".zip"):
+                print("File already exists")
+            else:
+                downloadUrl = createLicense(id, imageUrl, fileName)
+                yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip'})
 
         f.close()
 
