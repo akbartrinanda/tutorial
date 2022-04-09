@@ -77,6 +77,7 @@ class QuotesSpider(scrapy.Spider):
             res = json.loads(response.text)
             downloadUrl = res['data']['attributes']['downloadUrl']
             # print(res['data']['attributes']['downloadUrl'])
+            # print("\n")
             return downloadUrl
 
         f = open('data.json')
@@ -89,12 +90,15 @@ class QuotesSpider(scrapy.Spider):
             imageUrl = i['coverImage']['w2740']
             fileName = i['title']
             print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName, "\n")
-            if os.path.exists(file_path + fileName + ".jpg"):
+
+            # Download image
+            if os.path.exists(file_path + "/preview" + fileName + ".jpg"):
                 print("Image already exists")
             else:
                 print("Download image")
                 yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
 
+            # Download file
             if os.path.exists(file_path + fileName + ".zip"):
                 print("File already exists")
             else:
@@ -105,6 +109,10 @@ class QuotesSpider(scrapy.Spider):
         f.close()
 
     def parse(self, response, fileName, ext, file_path):
-        with open(file_path + fileName + "." + ext, 'wb') as f:
-            f.write(response.body)
+        if ext == 'jpg':
+            with open(file_path + "/preview" + fileName + "." + ext, 'wb') as f:
+                f.write(response.body)
+        else:
+            with open(file_path + fileName + "." + ext, 'wb') as f:
+                f.write(response.body)
         self.log(f'Saved file {fileName}')
