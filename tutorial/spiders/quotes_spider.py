@@ -72,14 +72,11 @@ class QuotesSpider(scrapy.Spider):
             response = requests.request(
                 "POST", url, headers=headers, data=payload)
 
-            try:
-                # print(response.text)
-                res = json.loads(response.text)
-                downloadUrl = res['data']['attributes']['downloadUrl']
-                # print(res['data']['attributes']['downloadUrl'])
-                return downloadUrl
-            except:
-                return ""
+            # print(response.text)
+            res = json.loads(response.text)
+            downloadUrl = res['data']['attributes']['downloadUrl']
+            # print(res['data']['attributes']['downloadUrl'])
+            return downloadUrl
 
         f = open('data.json')
         data = json.load(f)
@@ -105,11 +102,8 @@ class QuotesSpider(scrapy.Spider):
                 print("File already exists")
             else:
                 downloadUrl = createLicense(id, imageUrl, fileName)
-                if downloadUrl != "":
-                    print("Download file: ")
-                    yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
-                else:
-                    print("Download file failed")
+                print("Download file: ")
+                yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
         f.close()
 
     def parse(self, response, fileName, ext, file_path):
