@@ -1,5 +1,3 @@
 tutorial/spiders/download
-tutorial/__pycache__/__init__.cpython-36.pyc
-tutorial/__pycache__/settings.cpython-36.pyc
-tutorial/spiders/__pycache__/__init__.cpython-36.pyc
-tutorial/spiders/__pycache__/quotes_spider.cpython-36.pyc
+tutorial/__pycache__/
+tutorial/spiders/__pycache__/

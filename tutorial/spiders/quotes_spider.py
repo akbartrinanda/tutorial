@@ -89,7 +89,7 @@ class QuotesSpider(scrapy.Spider):
             id = i['id']
             imageUrl = i['coverImage']['w2740']
             fileName = i['title']
-            print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName, "\n")
+            print("\n" + x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName)
 
             # Download image
             if os.path.exists(file_path + "preview/" + fileName + ".jpg"):
