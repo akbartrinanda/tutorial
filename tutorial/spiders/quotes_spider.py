@@ -11,7 +11,7 @@ class QuotesSpider(scrapy.Spider):
         file_path = "tutorial/spiders/download/angular/"
 
         def createLicense(id, imageUrl, fileName):
-            print("\nCreate license")
+            print("Create license")
             imageUrl = "https://elements.envato.com/api/v1/items/" + id + "/license.json"
 
             payload = json.dumps({
@@ -45,7 +45,7 @@ class QuotesSpider(scrapy.Spider):
             return createDownload(id)
 
         def createDownload(id):
-            print("\nStart Download")
+            print("Start Download")
             url = "https://elements.envato.com/api/v1/items/" + id + "/download.json"
 
             payload = json.dumps({
@@ -103,9 +103,9 @@ class QuotesSpider(scrapy.Spider):
                 print("File already exists")
             else:
                 downloadUrl = createLicense(id, imageUrl, fileName)
-                print("\nDownload file: ")
+                print("Download file: ")
                 yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
-
+            print('\n')
         f.close()
 
     def parse(self, response, fileName, ext, file_path):
