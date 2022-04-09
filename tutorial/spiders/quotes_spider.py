@@ -41,7 +41,6 @@ class QuotesSpider(scrapy.Spider):
                 "POST", imageUrl, headers=headers, data=payload)
 
             # print(response.text)
-            # print("\n")
             return createDownload(id)
 
         def createDownload(id):
@@ -77,7 +76,6 @@ class QuotesSpider(scrapy.Spider):
             res = json.loads(response.text)
             downloadUrl = res['data']['attributes']['downloadUrl']
             # print(res['data']['attributes']['downloadUrl'])
-            # print("\n")
             return downloadUrl
 
         f = open('data.json')
@@ -89,7 +87,8 @@ class QuotesSpider(scrapy.Spider):
             id = i['id']
             imageUrl = i['coverImage']['w2740']
             fileName = i['title']
-            print("\n" + x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName)
+            print("\n")
+            print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName)
 
             # Download image
             if os.path.exists(file_path + "preview/" + fileName + ".jpg"):
@@ -105,7 +104,6 @@ class QuotesSpider(scrapy.Spider):
                 downloadUrl = createLicense(id, imageUrl, fileName)
                 print("Download file: ")
                 yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
-            print('\n')
         f.close()
 
     def parse(self, response, fileName, ext, file_path):
