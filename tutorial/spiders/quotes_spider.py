@@ -95,7 +95,10 @@ class QuotesSpider(scrapy.Spider):
                 print("Image already exists")
             else:
                 print("Download image")
-                yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
+                try:
+                    yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
+                except:
+                    pass
 
             # Download file
             if os.path.exists(file_path + fileName + ".zip"):
@@ -103,7 +106,10 @@ class QuotesSpider(scrapy.Spider):
             else:
                 downloadUrl = createLicense(id, imageUrl, fileName)
                 print("Download file: ")
-                yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
+                try:
+                    yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
+                except:
+                    pass
         f.close()
 
     def parse(self, response, fileName, ext, file_path):
