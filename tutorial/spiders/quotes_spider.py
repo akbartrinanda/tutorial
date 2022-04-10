@@ -11,13 +11,12 @@ class QuotesSpider(scrapy.Spider):
     def start_requests(self):
         file_path = "tutorial/spiders/download/angular/"
 
-        def createLicense(id, imageUrl, searchCorrelationId):
+        def createLicense(id, imageUrl):
             print("Create license")
             imageUrl = "https://elements.envato.com/api/v1/items/" + id + "/license.json"
 
             payload = json.dumps({
                 "itemId": id,
-                "searchCorrelationId": searchCorrelationId,
                 "licenseType": "trial"
             })
             headers = {
@@ -41,15 +40,14 @@ class QuotesSpider(scrapy.Spider):
                 "POST", imageUrl, headers=headers, data=payload)
 
             # print(response.text)
-            return createDownload(id, searchCorrelationId)
+            return createDownload(id)
 
-        def createDownload(id, searchCorrelationId):
+        def createDownload(id):
             print("Start Download")
             url = "https://elements.envato.com/api/v1/items/" + id + "/download.json"
 
             payload = json.dumps({
-                "licenseType": "trial",
-                "searchCorrelationId": searchCorrelationId
+                "licenseType": "trial"
             })
             headers = {
                 'authority': 'elements.envato.com',
@@ -80,14 +78,6 @@ class QuotesSpider(scrapy.Spider):
             # print("\t" + res['data']['attributes']['downloadUrl'])
             return downloadUrl
 
-        # search json by key
-        def search_json(self, key, value, json_file):
-            with open(json_file) as f:
-                data = json.load(f)
-                for p in data['items']:
-                    if p[key] == value:
-                        return p
-
         f = open('data.json')
         data = json.load(f)
 
@@ -97,9 +87,6 @@ class QuotesSpider(scrapy.Spider):
             id = i['id']
             imageUrl = i['coverImage']['w2740']
             fileName = i['title']
-            indexSearchCorrelationId = search_json(
-                self, 'id', id, 'search.json')
-            searchCorrelationId = indexSearchCorrelationId['itemUuid']
             print("\n")
             print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName)
 
@@ -114,7 +101,7 @@ class QuotesSpider(scrapy.Spider):
             if os.path.exists(file_path + fileName + ".zip"):
                 print("File already exists")
             else:
-                downloadUrl = createLicense(id, imageUrl, searchCorrelationId)
+                downloadUrl = createLicense(id, imageUrl)
                 print("Download file: ")
                 yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
         f.close()
