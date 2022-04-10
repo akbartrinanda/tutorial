@@ -77,7 +77,7 @@ class QuotesSpider(scrapy.Spider):
             # print(response.text)
             res = json.loads(response.text)
             downloadUrl = res['data']['attributes']['downloadUrl']
-            print("\t" + res['data']['attributes']['downloadUrl'])
+            # print("\t" + res['data']['attributes']['downloadUrl'])
             return downloadUrl
 
         # search json by key
