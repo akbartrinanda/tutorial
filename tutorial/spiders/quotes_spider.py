@@ -42,7 +42,7 @@ class QuotesSpider(scrapy.Spider):
                 "POST", imageUrl, headers=headers, data=payload)
 
             # print(response.text)
-            return createDownload(id)
+            return createDownload(id, searchCorrelationId)
 
         def createDownload(id, searchCorrelationId):
             print("Start Download")
