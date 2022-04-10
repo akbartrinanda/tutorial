@@ -5392,10 +5392,10 @@
         }
       },
       {
-        "searchTerm": "backend",
+        "searchTerm": "rtl",
         "coverImage": {
-          "tn120x80": "https://elements-cover-images.imgix.net/d4e58202-7f4d-4706-9312-d8d537c888c2?crop=top&fit=crop&fm=jpeg&h=80&q=80&w=120&s=d6e442674cf63cc1625efb0e429419a2",
-          "tn60x40": "https://elements-cover-images.imgix.net/d4e58202-7f4d-4706-9312-d8d537c888c2?crop=top&fit=crop&fm=jpeg&h=40&q=80&w=60&s=644893debbc6fc19011af5d49c3797e3"
+          "tn120x80": "https://elements-cover-images.imgix.net/1b3ecfdb-b217-4245-b411-704ca571a5bb?crop=top&fit=crop&fm=jpeg&h=80&q=80&w=120&s=0d6be1362f1fe3ecef38f5f0ba0c8141",
+          "tn60x40": "https://elements-cover-images.imgix.net/1b3ecfdb-b217-4245-b411-704ca571a5bb?crop=top&fit=crop&fm=jpeg&h=40&q=80&w=60&s=c373fa94ca5785d86079e48e2b92df16"
         }
       }
     ],
