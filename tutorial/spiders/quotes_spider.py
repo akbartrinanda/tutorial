@@ -3,6 +3,7 @@ import os.path
 
 import requests
 import scrapy
+from sqlalchemy import null
 
 
 class QuotesSpider(scrapy.Spider):
@@ -131,32 +132,53 @@ class QuotesSpider(scrapy.Spider):
             # print("\t" + res['data']['attributes']['downloadUrl'])
             return downloadUrl
 
+        # function search data by key
+        def search_data(self, data, key):
+            for i in data:
+                if i['title'] == key:
+                    return i['id']
+            return None
+
         data = json.load(f)
 
-        x = 0
-        for i in data['data']['items']:
-            x = x + 1
-            id = i['id']
-            imageUrl = i['coverImage']['w2740']
-            fileName = i['title']
-            print("\n")
-            print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName)
+        folder = "tutorial/spiders/download/angular"
+        for count, filename in enumerate(os.listdir(folder)):
+            resId = search_data(
+                self, data['data']['items'], filename.split('.')[0])
+            if resId != null:
+                dst = f"{resId} | {filename}"
+                # foldername/filename, if .py file is outside folder
+                src = f"{folder}/{filename}"
+                dst = f"{folder}/{dst}"
 
-            # Download image
-            if os.path.exists(file_path + "preview/" + id + ' | ' + fileName + ".jpg"):
-                print("Image already exists")
-            else:
-                print("Download image")
-                yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'id': id, 'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
+                # rename() function will
+                # rename all the files
+                os.rename(src, dst)
 
-            # Download file
-            if os.path.exists(file_path + id + ' | ' + fileName + ".zip"):
-                print("File already exists")
-            else:
-                downloadUrl = createLicense(id, imageUrl)
-                print("Download file: ")
-                yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'id': id, 'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
-        f.close()
+        # x = 0
+        # for i in data['data']['items']:
+        #     x = x + 1
+        #     id = i['id']
+        #     imageUrl = i['coverImage']['w2740']
+        #     fileName = i['title']
+        #     print("\n")
+        #     print(x, ": \t", id, "\n\t", imageUrl, "\n\t", fileName)
+
+        #     # Download image
+        #     if os.path.exists(file_path + "preview/" + id + ' | ' + fileName + ".jpg"):
+        #         print("Image already exists")
+        #     else:
+        #         print("Download image")
+        #         # yield scrapy.Request(url=imageUrl, callback=self.parse, cb_kwargs={'id': id, 'fileName': fileName, 'ext': 'jpg', 'file_path': file_path})
+
+        #     # Download file
+        #     if os.path.exists(file_path + id + ' | ' + fileName + ".zip"):
+        #         print("File already exists")
+        #     else:
+        #         # downloadUrl = createLicense(id, imageUrl)
+        #         print("Download file: ")
+        #         # yield scrapy.Request(url=downloadUrl, callback=self.parse, cb_kwargs={'id': id, 'fileName': fileName, 'ext': 'zip', 'file_path': file_path})
+        # f.close()
 
     def parse(self, response, id, fileName, ext, file_path):
         if ext == 'jpg':
